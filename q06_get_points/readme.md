@@ -1,0 +1,1 @@
+q04_diff_summer_winter_gold_medals

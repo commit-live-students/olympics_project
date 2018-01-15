@@ -1,0 +1,1 @@
+{ "notebook": { "folder": "olympics_project" , "q01_load_data": "q01_load_data.ipynb", "q02_rename_columns": "q02_rename_columns.ipynb", "q03_split_country": "q03_split_country.ipynb", "q04_country_with_most_gold_medals": "q04_country_with_most_gold_medals.ipynb", "q05_difference_in_gold_medal": "q05_difference_in_gold_medal.ipynb", "q06_get_points": "q06_get_points.ipynb"} }
