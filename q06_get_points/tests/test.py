@@ -21,5 +21,5 @@ class TestRead_csv_data_to_df(TestCase):
     def test_return_instance(self):
         self.assertIsInstance(df, pandas.Series, "The Expected return type does not match with the given")
 
-    def test_output_type(self):
-        self.assertListEqual(values, check, "The Expected return type does not match the return")
+    def test_return(self):
+        self.assertListEqual(values, check, "The Expected return does not match the output")

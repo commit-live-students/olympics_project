@@ -15,5 +15,5 @@ class TestRead_csv_data_to_df(TestCase):
         arg = getargspec(q05_difference_in_gold_medal).args
         self.assertEqual(len(arg), 1, "Expected argument(s) %d, Given %d" % (1, len(arg)))
 
-    def test_output_type(self):
-        self.assertEqual(df, 147, "The Expected return type does not match the return type")
+    def test_return(self):
+        self.assertEqual(df, 147, "The Expected return does not match the return")
