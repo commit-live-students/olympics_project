@@ -1,6 +1,6 @@
 # Olympic Dataset Guided Project
 
-Doing this Project will help you get acquainted with basics of Python operations and data manipulation.
+Hello budding Data Scientists, let's try out a guided project which will enable you to get answers to questions using basic python and pandas. We will be using the Olympics data set. You will learn how to handle and clean the data in pandas. You will also learn to answer questions using simple operations. 
 
 
 ## You will learn to apply :
