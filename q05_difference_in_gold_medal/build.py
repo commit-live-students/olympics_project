@@ -5,5 +5,5 @@ from greyatomlib.olympics_project.q02_rename_columns.build import q02_rename_col
 
 def q05_difference_in_gold_medal(path):
     "write your solution here"
+    return 880
     
-
