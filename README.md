@@ -17,3 +17,6 @@ Hello budding Data Scientists, let's try out a guided project which will enable 
 
 You will be working on olympics dataset (olympics.csv), which was derrived from the Wikipedia entry. An [all-time medal table for all Olympic Games](https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table) from 1896 to 2016, including Summer Olympic Games, Winter Olympic Games, and a combined total of both, is tabulated below. These Olympic medal counts do not include the 1906 Intercalated Games which are no longer recognized by the International Olympic Committee (IOC) as official Games.
 
+## Pre-requisites
+- Working knowledge of Pandas, Numpy
+- Data indexing and slicing 
