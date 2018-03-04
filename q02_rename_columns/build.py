@@ -6,4 +6,7 @@ from greyatomlib.olympics_project.q01_load_data.build import q01_load_data
 def q02_rename_columns(path):
     "write your solution here"
     df = q01_load_data(path)
+    df.rename(columns={'01 !': 'Gold', '02 !': 'Silver', '03 !': 'Bronze'}, inplace=True)
+    return df
+
     
