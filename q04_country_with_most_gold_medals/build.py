@@ -14,8 +14,8 @@ def q04_country_with_most_gold_medals(path):
 
     for i in dfa.values:
 
-        value = int(i[0]) + int(i[1]) + int(i[2])
-        total_gold.append(value)
+        total_gold_medals = int(i[0]) + int(i[1]) + int(i[2])
+        total_gold.append(total_gold_medals)
 
     dfa['total_gold'] = total_gold
     country = dfa.stack().index[np.argmax(dfa.values)]
