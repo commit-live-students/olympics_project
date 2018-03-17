@@ -3,7 +3,7 @@ import sys, os
 sys.path.append(os.path.join(os.path.dirname(os.curdir)))
 from unittest import TestCase
 from ..build import q01_load_data
-from inspect import getargspec
+from inspect import getfullargspec
 import pandas
 import pep8
 # import subprocess
@@ -15,7 +15,7 @@ df = q01_load_data(path)
 
 class TestRead_csv_data_to_df(TestCase):
     def test_read_csv_data_to_df_args(self):
-        arg = getargspec(q01_load_data).args
+        arg = getfullargspec(q01_load_data).args
         self.assertEqual(len(arg), 1, "Expected argument(s) %d, Given %d" % (1, len(arg)))
 
     def test_read_csv_data_to_df_return_instance(self):
