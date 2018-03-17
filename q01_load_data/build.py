@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 
-
+path = "data/olympics.csv"
 def q01_load_data(path):
     "write your solution here"
     # use .read_csv function to read the
@@ -12,4 +12,5 @@ def q01_load_data(path):
     new_header[0] = 'country name'
     df = df[1:]  # take the data less the header row
     df.columns = new_header  # set the header row as the df header
-    return df
+    return (df)
+#print (q01_load_data(path))
