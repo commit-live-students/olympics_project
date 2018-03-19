@@ -16,3 +16,5 @@ def q02_rename_columns(path):
     df.columns = new_header
 
     return df
+
+q02_rename_columns("data/olympics.csv")

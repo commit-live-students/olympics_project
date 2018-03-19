@@ -9,9 +9,11 @@ def q05_difference_in_gold_medal(path):
     data = q03_summer_gold_medals(path)
     gold_data = data.Gold
     diff = []
-
+    print(gold_data)
     for i in gold_data.values:
 
         diff.append(abs(int(i[0]) - int(i[1])))
 
     return max(diff)
+
+q05_difference_in_gold_medal()

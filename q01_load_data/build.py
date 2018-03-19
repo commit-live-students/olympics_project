@@ -14,3 +14,5 @@ def q01_load_data(path):
     df.columns = new_header  # set the header row as the df header
 
     return df
+
+q01_load_data("data/olympics.csv")
