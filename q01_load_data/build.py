@@ -13,3 +13,4 @@ def q01_load_data(path):
     df = df[1:]  # take the data less the header row
     df.columns = new_header  # set the header row as the df header
     return df
+#print (q01_load_data("data/olympics.csv").shape)
