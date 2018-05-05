@@ -6,6 +6,7 @@ from sklearn.model_selection import train_test_split
 
 def q01_load_data(path):
    df = pd.read_csv(path, header=0)
+   print(df)
    new_header = df.iloc[0]  # grab the first row for the header
    new_header[0] = 'country name'
    df = df[1:]  # take the data less the header row
@@ -15,6 +16,7 @@ def q01_load_data(path):
 path = 'data/olympics.csv'
 
 q01_load_data(path)
+
 
 
 
