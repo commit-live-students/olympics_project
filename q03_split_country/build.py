@@ -13,14 +13,11 @@ def split_func(value):
    
 
 def q03_summer_gold_medals(path):
-    'write your solution here'
+    ##'write your solution here'
     df = q02_rename_columns(path)
     CC = df['country name'].apply(split_func)
     df['country name']=CC
     df.set_index('country name',inplace=True)
-    df.drop(labels=['Total'], axis=1,inplace=True)
-    return df[:146]
-   
-    
-   
+    df.drop(labels=['Totals'], axis=0,inplace=True)
+    return df
 
