@@ -6,7 +6,7 @@ from greyatomlib.olympics_project.q03_split_country.build import q03_summer_gold
 path = './data/olympics.csv'
 
 def q04_country_with_most_gold_medals(path):
-    'write your solution here'
+
     df = q03_summer_gold_medals(path)
     d = df.Gold
     v = d.iloc[:,0].astype(int) + d.iloc[:,1].astype(int) +d.iloc[:,2].astype(int)
