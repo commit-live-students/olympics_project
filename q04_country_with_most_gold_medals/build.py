@@ -9,12 +9,13 @@ def q04_country_with_most_gold_medals(path):
 
     df = q03_summer_gold_medals(path)
     d = df.Gold
-    v = d.iloc[:,0].astype(int) + d.iloc[:,1].astype(int) +d.iloc[:,2].astype(int)
+    v = d.iloc[:,2].astype(int)
     country_with_most_golds = v.nlargest(1).index[0].strip()
     return country_with_most_golds
 
 
 q04_country_with_most_gold_medals(path)
+
 
 
 
