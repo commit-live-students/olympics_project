@@ -4,7 +4,9 @@ from sklearn.model_selection import train_test_split
 
 
 def q01_load_data(path):
-    "write your solution here"
-    # use .read_csv function to read the
-    # data and header=0 to skip the first row
-
+    dd=pd.read_csv(path,header=0)
+    header=dd.iloc[0]
+    header[0]='Country Name'
+    new_df=dd[1:]
+    new_df.columns=header
+    return new_df
