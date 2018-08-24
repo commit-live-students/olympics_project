@@ -11,13 +11,13 @@ def q03_summer_gold_medals(path):
     a = df['country name']
     b = a.str.split('(',expand=True)
     c = b[0]
-    d = b[1]
-    e = d.str.split(')', expand=True)
-    f = list(e[0])
+#     d = b[1]
+#     e = d.str.split(')', expand=True)
+#     f = list(e[0])
     df = df.set_index(c)
-    df['country code'] = f
+#     df['country code'] = f
     df.drop(['Totals'], axis = 0, inplace = True)
-    df.drop(['Total'], axis = 1, inplace = True)
+    df.drop(['country name'], axis = 1, inplace = True)
     df.index.name = 'country name'
     return df
 
